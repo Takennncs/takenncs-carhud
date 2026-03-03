@@ -1,0 +1,148 @@
+@font-face { 
+  font-family: roboto-regular; 
+  src: url('WorkSans-SemiBold.ttf'); 
+} 
+
+body{
+  background-color: gray transparent !important;
+}
+
+#wrapper{
+  position: fixed;
+  left: 360px;
+  bottom: -80px;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+ 
+#meter{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+#wrapper1{
+  position: fixed;
+  left: 360px;
+  bottom: -80px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  filter: url(#shadow);
+}
+ 
+#meter1{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  filter: url(#shadow);
+}
+
+#wrapper3{
+  position: fixed;
+  left: 360px;
+  bottom: -76px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+ 
+#meter3{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  filter: url(#prupl);
+}
+
+.location-display {
+  position: fixed;
+  left: 420px;
+  bottom: 25px;
+  padding: 8px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  font-family: roboto-regular;
+  font-weight: bold;
+}
+
+.hud-container {
+  position: fixed;
+  left: 360px;
+  bottom: 65px;
+  z-index: 10;
+}
+
+.hud-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.fuel-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.fuel-icon {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fuel-bar {
+  width: 8px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.fuel-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: #FE6F27;
+  border-radius: 6px 6px 0 0;
+  transition: height 0.4s ease-out;
+}
+
+.fuel-progress.low {
+  background: #ff2d2d;
+}
+
+.speed-display {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: 'DS-Digital', monospace;
+  font-size: 58px;
+  color: white;
+  text-shadow: 0 0 12px rgba(254, 111, 39, 0.6);
+  line-height: 1;
+  margin-top: 98px;
+}
+
+.speed-display .kmh {
+  font-size: 26px;
+  font-family: roboto-regular;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 3px;
+}
+
+#kmtext {
+  letter-spacing: 1px;
+}
+
+#vehicle {
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  font-size: 24px;
+}

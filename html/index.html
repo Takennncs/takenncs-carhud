@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>takenncs Vehicle Hud</title>
+</head>
+<body style="display:none;" id="mybody">
+  <div id="wrapper">
+    <div class="hud-container">
+      <div class="hud-row">
+
+        <div class="fuel-bar-container">
+          <i class="fas fa-gas-pump fuel-icon"></i>
+          <div class="fuel-bar">
+            <div class="fuel-progress" id="fuel-progress"></div>
+          </div>
+        </div>
+
+        <div class="speed-display">
+          <span id="kmtext">025</span>
+          <div class="kmh">KMH</div>
+          <i class="fas fa-car" id="kemer" style="margin-left: 10px; font-size: 24px;"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="elements-container">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+  <script src="script.js"></script>
+</body>
+</html>
