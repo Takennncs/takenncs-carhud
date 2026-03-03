@@ -2,10 +2,6 @@
 
 A customizable vehicle HUD (Heads-Up Display) for FiveM that shows speed, fuel level, seatbelt status, cruise control, and location information.
 
-## 📸 Preview
-
-[Add screenshots here]
-
 ## ✨ Features
 
 - **Digital Speedometer** - Clean, easy-to-read speed display in KMH
